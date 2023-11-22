@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-bcmo
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/push-pyxis-tenant/appstudio/devfile-sample-python-basic-bcmo@sha256:6a63ee6c49289b2381fbfbfe92011e53b6d382b7de3022b87bff3c308d07aa31
+        name: my-python
+        resources: {}
+status: {}
